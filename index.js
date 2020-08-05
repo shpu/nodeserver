@@ -8,15 +8,15 @@ let anime = [
         name: 'Boku no Pico'
     },
     {
-        id:2,
+        id: 2,
         name: 'Fok Fok Literature Club'
     },
     {
-        id:3,
+        id: 3,
         name: 'Dick'
     },
     {
-        id:4,
+        id: 4,
         name: 'Van'
     }
 ];
@@ -31,11 +31,11 @@ app.get('/anime', function (req, res) {
 
 app.get('/anime/:id', function (req, res) {
     console.log(req.params);
-    let anime = anime.find(function (anime)
+    var anima = anime.find(function (anima)
     {
-        return anime.id === Number(req.params.id)
+        return anima.id === Number(req.params.id)
     });
-    res.send(anime);
+    res.send(anima);
 })
 
 app.listen(3000, function () {

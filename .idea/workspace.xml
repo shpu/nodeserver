@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041cd7ae-018b-48cf-ba12-c7f238567282" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="041cd7ae-018b-48cf-ba12-c7f238567282" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596638335569</updated>
-      <workItem from="1596638336885" duration="2791000" />
+      <workItem from="1596638336885" duration="3264000" />
     </task>
     <servers />
   </component>
@@ -73,9 +69,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2172" y="476" key="Vcs.Push.Dialog.v2" timestamp="1596640715189">
+    <state x="2172" y="476" key="Vcs.Push.Dialog.v2" timestamp="1596641151787">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
-    <state x="2172" y="476" key="Vcs.Push.Dialog.v2/0.40.3440.1400@0.40.3440.1400" timestamp="1596640715189" />
+    <state x="2172" y="476" key="Vcs.Push.Dialog.v2/0.40.3440.1400@0.40.3440.1400" timestamp="1596641151787" />
   </component>
 </project>

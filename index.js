@@ -14,6 +14,10 @@ let anime = [
     {
         id:3,
         name: 'Dick'
+    },
+    {
+        id:3,
+        name: 'Van'
     }
 ];
 

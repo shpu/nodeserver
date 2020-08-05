@@ -29,6 +29,15 @@ app.get('/anime', function (req, res) {
     res.send(anime);
 })
 
+app.get('/anime/:id', function (req, res) {
+    console.log(req.params);
+    let anime = anime.find(function (anime)
+    {
+        return anime.id === Number(req.params.id)
+    });
+    res.send(anime);
+})
+
 app.listen(3000, function () {
    console.log('Server -- OK');
 })

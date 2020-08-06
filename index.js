@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const PORT = process.env.PORT || 3000;
 const app = express();
-const url =  'mongodb+srv://admin:nopassword@morgtown-data-cluster.dasjj.mongodb.net/morgtown_chat';
+const url = 'mongodb+srv://admin:nopassword@morgtown-data-cluster.dasjj.mongodb.net/morgtown_chat';
 let db;
 
 app.use(bodyParser.json());
@@ -30,7 +30,22 @@ app.get('/messages', function (req, res) {
         }
         res.send(docs);
     })
+}) //ловим данные из БД и отправляем по запросу
+
+
+app.post('/messages', function (req, res) {
+    let newMessage = {
+        text: req.body.text //Подготовка данных с фронтенда для пересылки в БД
+    }
+    db.collection("messages").insert(newMessage, function (res, result) { //отправка сообщения в коллекцию
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500); //ответ код ошибки
+        }
+        res.sendStatus(200); //ответ код успеха
+    })
 })
+
 
 // let anime = [
 //     {

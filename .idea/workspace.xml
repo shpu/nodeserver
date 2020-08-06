@@ -54,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596638335569</updated>
       <workItem from="1596638336885" duration="10158000" />
-      <workItem from="1596712941112" duration="5726000" />
+      <workItem from="1596712941112" duration="6997000" />
     </task>
     <servers />
   </component>
@@ -78,6 +78,10 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state x="1843" y="613" key="#Notifications/0.40.3440.1400@0.40.3440.1400" timestamp="1596712958056" />
+    <state x="2301" y="488" width="540" height="524" key="StructurePopup" timestamp="1596719854192">
+      <screen x="0" y="40" width="3440" height="1400" />
+    </state>
+    <state x="2301" y="488" width="540" height="524" key="StructurePopup/0.40.3440.1400@0.40.3440.1400" timestamp="1596719854192" />
     <state x="2172" y="476" key="Vcs.Push.Dialog.v2" timestamp="1596641151787">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>

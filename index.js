@@ -22,6 +22,16 @@ MongoClient.connect(url, function (err, client) {
     })
 }) //подключение к БД
 
+app.get('/messages', function (req, res) {
+    db.collection("messages").find({}).toArray(function (err, docs) {
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500);
+        }
+        res.send(docs);
+    })
+})
+
 // let anime = [
 //     {
 //         id: 1,

@@ -8,11 +8,18 @@ const app = express();
 const url =  'mongodb+srv://admin:nopassword@morgtown-data-cluster.dasjj.mongodb.net/morgtown_chat';
 let db;
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true})); //подключение бодипарсера чтобы переводить запросы в json
+
 MongoClient.connect(url, function (err, client) {
     if (err) {
         console.log(err);
     }
-    console.log('DB ---- OK')
+    console.log('DB ---- OK');
+    db = client.db('morgtown_chat'); //присоединение к БД
+    app.listen(PORT, function () {
+        console.log('Server ---- OK');
+    })
 }) //подключение к БД
 
 // let anime = [
@@ -51,6 +58,3 @@ MongoClient.connect(url, function (err, client) {
 //     res.send(anima);
 // })
 //
-// app.listen(3000, function () {
-//    console.log('Server -- OK');
-// })

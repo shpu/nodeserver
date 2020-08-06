@@ -11,8 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041cd7ae-018b-48cf-ba12-c7f238567282" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596638335569</updated>
-      <workItem from="1596638336885" duration="8923000" />
+      <workItem from="1596638336885" duration="10158000" />
+      <workItem from="1596712941112" duration="1368000" />
     </task>
     <servers />
   </component>
@@ -70,8 +72,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1843" y="613" key="#Notifications" timestamp="1596712958056">
+      <screen x="0" y="40" width="3440" height="1400" />
+    </state>
+    <state x="1843" y="613" key="#Notifications/0.40.3440.1400@0.40.3440.1400" timestamp="1596712958056" />
     <state x="2172" y="476" key="Vcs.Push.Dialog.v2" timestamp="1596641151787">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>

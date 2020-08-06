@@ -30,6 +30,7 @@ app.get('/messages', function (req, res) {
             console.log(err);
             return res.sendStatus(500);
         }
+        docs = docs.slice(-7); //кринж
         res.send(docs);
     })
 }) //ловим данные из БД и отправляем по запросу //сделать так чтобы отправлялось 8 послдених сообщений с помощью массива

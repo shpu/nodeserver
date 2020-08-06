@@ -6,6 +6,8 @@ const MongoClient = require('mongodb').MongoClient;
 const PORT = process.env.PORT || 3000;
 const app = express();
 const url = 'mongodb+srv://admin:nopassword@morgtown-data-cluster.dasjj.mongodb.net/morgtown_chat';
+const ObjectID = require('mongodb').ObjectID;
+
 let db;
 
 app.use(bodyParser.json());
@@ -32,6 +34,27 @@ app.get('/messages', function (req, res) {
     })
 }) //ловим данные из БД и отправляем по запросу
 
+app.get('/messages/:id', function (req, res) {
+    db.collection("messages").findOne({_id: ObjectID(req.params.id)}, function (err, docs) { //парсим параметры
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500);
+        }
+        res.send(docs);
+    })
+}) //получение сообщения по id
+
+app.delete('/messages/:id', function (req, res) {
+    db.collection("messages").deleteOne({_id: ObjectID(req.params.id)}, function (err, result) {
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500);
+        }
+        res.sendStatus(200);
+    })
+
+}) //удаление объекта по id
+
 
 app.post('/messages', function (req, res) {
     let newMessage = {
@@ -45,6 +68,8 @@ app.post('/messages', function (req, res) {
         res.sendStatus(200); //ответ код успеха
     })
 })
+
+//добавить метод PUT
 
 
 // let anime = [

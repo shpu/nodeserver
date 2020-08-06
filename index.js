@@ -37,7 +37,7 @@ app.post('/messages', function (req, res) {
     let newMessage = {
         text: req.body.text //Подготовка данных с фронтенда для пересылки в БД
     }
-    db.collection("messages").insert(newMessage, function (res, result) { //отправка сообщения в коллекцию
+    db.collection("messages").insert(newMessage, function (err, result) { //отправка сообщения в коллекцию
         if (err) {
             console.log(err);
             return res.sendStatus(500); //ответ код ошибки

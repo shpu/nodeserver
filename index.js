@@ -33,7 +33,7 @@ app.get('/messages', function (req, res) {
         docs = docs.slice(-8); //ЛЕВ ЭТО ДЛЯ ТЕБЯ
         res.send(docs);
     })
-}) //ловим данные из БД и отправляем по запросу //сделать так чтобы отправлялось 8 послдених сообщений с помощью массива
+}) //ловим данные из БД и отправляем по запросу 8 последних элементов
 
 app.get('/messages/:id', function (req, res) {
     db.collection("messages").findOne({_id: ObjectID(req.params.id)}, function (err, docs) { //парсим параметры
@@ -71,7 +71,6 @@ app.post('/messages', function (req, res) {
 })
 
 
-//добавить гет с ответом в виде последних 8-ти сообщений
 //добавить метод PUT
 
 

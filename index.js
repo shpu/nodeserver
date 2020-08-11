@@ -72,6 +72,7 @@ app.post('/messages', function (req, res) {
 
 
 //добавить метод PUT
+//регистрация авторизация
 
 
 // let anime = [
